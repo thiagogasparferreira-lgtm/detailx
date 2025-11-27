@@ -1,0 +1,21 @@
+[
+  {
+    "id": "be44eb58-1086-4d9d-986b-02eb448e7821",
+    "status": "Concluído",
+    "customer": {
+      "nome": "thiago",
+      "endereco": "rua altamira 376 "
+    },
+    "items": [
+      {
+        "id": "p-sh-001",
+        "name": "Shampoo pH Neutro",
+        "price": 49.9,
+        "qty": 1
+      }
+    ],
+    "payment": "Cartão",
+    "total": 49.9,
+    "createdAt": "2025-11-16T17:12:18.959Z"
+  }
+]

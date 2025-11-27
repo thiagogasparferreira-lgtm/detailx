@@ -1,0 +1,13 @@
+[
+  {
+    "id": "p-sh-001",
+    "name": "Shampoo pH Neutro",
+    "description": "Limpeza suave sem remover proteção",
+    "price": 49.9,
+    "rating": 4.7,
+    "stock": 119,
+    "supplierId": "sup-aurum",
+    "category": "Shampoo automotivo",
+    "photoUrl": "/product-images/p-sh-001.jpg"
+  }
+]

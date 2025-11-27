@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p-sh-001",
+    "name": "Shampoo pH Neutro",
+    "description": "Limpeza suave sem remover proteção",
+    "price": 49.9,
+    "rating": 4.8,
+    "stock": 120,
+    "supplierId": "sup-aurum",
+    "category": "Shampoo automotivo",
+    "photoUrl": "/product-images/p-sh-001.jpg"
+  },
+  {
+    "id": "p-ce-001",
+    "name": "Cera Sintética",
+    "description": "Proteção e brilho duradouro",
+    "price": 59.9,
+    "rating": 4.7,
+    "stock": 80,
+    "supplierId": "sup-brill",
+    "category": "Cera",
+    "photoUrl": "/product-images/p-ce-001.jpg"
+  },
+  {
+    "id": "p-cu-001",
+    "name": "Hidratante de Couro",
+    "description": "Nutre e protege o couro",
+    "price": 69.9,
+    "rating": 4.6,
+    "stock": 65,
+    "supplierId": "sup-lustra",
+    "category": "Hidratante de couro",
+    "photoUrl": "/product-images/p-cu-001.jpg"
+  },
+  {
+    "id": "p-li-001",
+    "name": "Limpador Multiuso",
+    "description": "Remove sujeira sem agredir",
+    "price": 29.9,
+    "rating": 4.5,
+    "stock": 200,
+    "supplierId": "sup-aurum",
+    "category": "Limpadores",
+    "photoUrl": "/product-images/p-li-001.jpg"
+  },
+  {
+    "id": "p-po-001",
+    "name": "Polidor de Pintura",
+    "description": "Remove micro riscos e realça brilho",
+    "price": 79.9,
+    "rating": 4.7,
+    "stock": 70,
+    "supplierId": "sup-brill",
+    "category": "Polidores",
+    "photoUrl": "/product-images/p-po-001.jpg"
+  },
+  {
+    "id": "p-ro-001",
+    "name": "Limpa Rodas",
+    "description": "Fórmula segura para diversos acabamentos",
+    "price": 39.9,
+    "rating": 4.4,
+    "stock": 90,
+    "supplierId": "sup-lustra",
+    "category": "Rodas",
+    "photoUrl": "/product-images/p-ro-001.jpg"
+  },
+  {
+    "id": "p-ac-001",
+    "name": "Toalha Microfibra Premium",
+    "description": "Alta absorção e maciez",
+    "price": 24.9,
+    "rating": 4.6,
+    "stock": 150,
+    "supplierId": "sup-aurum",
+    "category": "Acessórios",
+    "photoUrl": "/product-images/p-ac-001.jpg"
+  },
+  {
+    "id": "p-sh-003",
+    "name": "Kit Shampoo + Cera",
+    "description": "Combo essencial para lavagem e proteção",
+    "price": 99.9,
+    "rating": 4.8,
+    "stock": 50,
+    "supplierId": "sup-brill",
+    "category": "Kits",
+    "photoUrl": "/product-images/p-sh-003.jpg"
+  }
+]

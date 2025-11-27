@@ -1,0 +1,5 @@
+[
+  { "id": "sup-aurum", "name": "Aurum Detail", "contact": "contato@aurumdetail.com", "status": "Ativo" },
+  { "id": "sup-brill", "name": "Brilliance Auto Care", "contact": "suporte@brillcare.com", "status": "Ativo" },
+  { "id": "sup-lustra", "name": "LustraMax", "contact": "vendas@lustramax.com", "status": "Ativo" }
+]

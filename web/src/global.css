@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --dx-bg: #0F0F0F;
+  --dx-surface: #1A1A1A;
+  --dx-accent: #FF6B00;
+  --dx-text: #E5E5E5;
+  --dx-border: rgba(255,255,255,0.12);
+  --dx-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+html, body {
+  background-color: var(--dx-bg) !important;
+  color: var(--dx-text) !important;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  background-color: var(--dx-bg) !important;
+  color: var(--dx-text) !important;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, Inter, sans-serif;
+}
+
+a {
+  color: var(--dx-text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dx-accent);
+}
+
+.text-secondary {
+  color: #B0B0B0 !important;
+}
+
+button {
+  border: 1px solid var(--dx-border);
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--dx-accent);
+  color: #000;
+}
+
+input, textarea, select {
+  background-color: var(--dx-surface);
+  color: var(--dx-text);
+  border: 1px solid var(--dx-border);
+  font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9CA3AF;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--dx-accent);
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.25);
+}
+ 
+
+
+/* seus estilos extras aqui, se quiser */
+

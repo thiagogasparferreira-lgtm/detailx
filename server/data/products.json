@@ -1,0 +1,222 @@
+[
+  {
+    "id": "p-sh-001",
+    "name": "Shampoo pH Neutro",
+    "description": "Limpeza suave sem remover proteção",
+    "price": 49.9,
+    "rating": 4.7,
+    "stock": 119,
+    "supplierId": "sup-aurum",
+    "category": "Shampoo automotivo",
+    "photoUrl": "/product-images/p-sh-001.jpg"
+  },
+  {
+    "id": "p-sh-003",
+    "name": "Shampoo Concentrado",
+    "description": "Rendimento superior para uso profissional",
+    "price": 69.9,
+    "rating": 4.5,
+    "stock": 70,
+    "supplierId": "sup-lustra",
+    "category": "Shampoo automotivo",
+    "photoUrl": "/product-images/p-sh-003.jpg"
+  },
+  {
+    "id": "p-ce-001",
+    "name": "Cera Carnaúba Premium",
+    "description": "Brilho profundo e proteção",
+    "price": 89.9,
+    "rating": 4.8,
+    "stock": 55,
+    "supplierId": "sup-aurum",
+    "category": "Cera",
+    "photoUrl": "/product-images/p-ce-001.jpg"
+  },
+  {
+    "id": "p-ce-002",
+    "name": "Cera Sintética Rápida",
+    "description": "Aplicação fácil com alta durabilidade",
+    "price": 79.9,
+    "rating": 4.4,
+    "stock": 40,
+    "supplierId": "sup-brill",
+    "category": "Cera",
+    "photoUrl": "/product-images/p-ce-002.jpg"
+  },
+  {
+    "id": "p-ce-003",
+    "name": "Cera Líquida Brilho",
+    "description": "Acabamento espelhado",
+    "price": 59.9,
+    "rating": 4.3,
+    "stock": 25,
+    "supplierId": "sup-lustra",
+    "category": "Cera",
+    "photoUrl": "/product-images/p-ce-003.jpg"
+  },
+  {
+    "id": "p-cu-001",
+    "name": "Hidratante de Couro Lux",
+    "description": "Nutre e protege bancos de couro",
+    "price": 99.9,
+    "rating": 4.7,
+    "stock": 35,
+    "supplierId": "sup-aurum",
+    "category": "Hidratante de couro",
+    "photoUrl": "/product-images/p-cu-001.jpg"
+  },
+  {
+    "id": "p-cu-002",
+    "name": "Condicionador de Couro Matte",
+    "description": "Acabamento natural sem brilho",
+    "price": 89.9,
+    "rating": 4.5,
+    "stock": 22,
+    "supplierId": "sup-brill",
+    "category": "Hidratante de couro",
+    "photoUrl": "/product-images/p-cu-002.jpg"
+  },
+  {
+    "id": "p-cu-003",
+    "name": "Revitalizador de Couro",
+    "description": "Restaura maciez e cor",
+    "price": 119.9,
+    "rating": 4.6,
+    "stock": 18,
+    "supplierId": "sup-lustra",
+    "category": "Hidratante de couro",
+    "photoUrl": "/product-images/p-cu-003.jpg"
+  },
+  {
+    "id": "p-li-001",
+    "name": "Limpador Multiuso",
+    "description": "Interior e exterior",
+    "price": 39.9,
+    "rating": 4.2,
+    "stock": 200,
+    "supplierId": "sup-aurum",
+    "category": "Limpadores",
+    "photoUrl": "/product-images/p-li-001.jpg"
+  },
+  {
+    "id": "p-li-002",
+    "name": "Limpador de Vidros Cristal",
+    "description": "Sem marcas, alta clareza",
+    "price": 29.9,
+    "rating": 4.4,
+    "stock": 160,
+    "supplierId": "sup-brill",
+    "category": "Limpadores",
+    "photoUrl": "/product-images/p-li-002.jpg"
+  },
+  {
+    "id": "p-li-003",
+    "name": "Desengraxante Seguro",
+    "description": "Remove sujeira pesada sem agredir",
+    "price": 49.9,
+    "rating": 4.3,
+    "stock": 90,
+    "supplierId": "sup-lustra",
+    "category": "Limpadores",
+    "photoUrl": "/product-images/p-li-003.jpg"
+  },
+  {
+    "id": "p-po-001",
+    "name": "Polidor de Corte",
+    "description": "Remoção de riscos e marcas",
+    "price": 89.9,
+    "rating": 4.5,
+    "stock": 60,
+    "supplierId": "sup-aurum",
+    "category": "Polidores",
+    "photoUrl": "/product-images/p-po-001.jpg"
+  },
+  {
+    "id": "p-po-002",
+    "name": "Polidor de Refino",
+    "description": "Acabamento com alto brilho",
+    "price": 79.9,
+    "rating": 4.6,
+    "stock": 50,
+    "supplierId": "sup-brill",
+    "category": "Polidores",
+    "photoUrl": "/product-images/p-po-002.jpg"
+  },
+  {
+    "id": "p-po-003",
+    "name": "Selante de Pintura",
+    "description": "Proteção prolongada",
+    "price": 99.9,
+    "rating": 4.7,
+    "stock": 35,
+    "supplierId": "sup-lustra",
+    "category": "Polidores",
+    "photoUrl": "/product-images/p-po-003.jpg"
+  },
+  {
+    "id": "p-ro-001",
+    "name": "Limpador de Rodas Forte",
+    "description": "Remove ferros e contaminações",
+    "price": 59.9,
+    "rating": 4.4,
+    "stock": 110,
+    "supplierId": "sup-aurum",
+    "category": "Rodas e Pneus",
+    "photoUrl": "/product-images/p-ro-001.jpg"
+  },
+  {
+    "id": "p-ro-002",
+    "name": "Pretinho de Pneus",
+    "description": "Acabamento uniforme e durável",
+    "price": 34.9,
+    "rating": 4.3,
+    "stock": 140,
+    "supplierId": "sup-brill",
+    "category": "Rodas e Pneus",
+    "photoUrl": "/product-images/p-ro-002.jpg"
+  },
+  {
+    "id": "p-ro-003",
+    "name": "Descontaminante de Rodas",
+    "description": "Remove partículas ferrosas",
+    "price": 69.9,
+    "rating": 4.6,
+    "stock": 80,
+    "supplierId": "sup-lustra",
+    "category": "Rodas e Pneus",
+    "photoUrl": "/product-images/p-ro-003.jpg"
+  },
+  {
+    "id": "p-ac-001",
+    "name": "Microfibra Premium",
+    "description": "Toalha 400gsm",
+    "price": 19.9,
+    "rating": 4.5,
+    "stock": 300,
+    "supplierId": "sup-aurum",
+    "category": "Acessórios",
+    "photoUrl": "/product-images/p-ac-001.jpg"
+  },
+  {
+    "id": "p-ac-002",
+    "name": "Aplicador de Cera",
+    "description": "Espuma densa",
+    "price": 14.9,
+    "rating": 4.2,
+    "stock": 220,
+    "supplierId": "sup-brill",
+    "category": "Acessórios",
+    "photoUrl": "/product-images/p-ac-002.jpg"
+  },
+  {
+    "id": "p-ac-003",
+    "name": "Escova de Detalhe",
+    "description": "Cerdas macias",
+    "price": 24.9,
+    "rating": 4.3,
+    "stock": 180,
+    "supplierId": "sup-lustra",
+    "category": "Acessórios",
+    "photoUrl": "/product-images/p-ac-003.jpg"
+  }
+]
