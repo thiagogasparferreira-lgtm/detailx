@@ -6,9 +6,9 @@ import { useToast } from '../hooks/useToast';
 import StarRating from '../components/StarRating';
 
 const mockReviews = [
-  { id: 1, userName: 'Carlos Silva', rating: 5, comment: 'Excelente produto! Superou minhas expectativas.', date: '2024-01-15' },
-  { id: 2, userName: 'Maria Santos', rating: 4, comment: 'Muito bom, entrega rápida e produto de qualidade.', date: '2024-01-10' },
-  { id: 3, userName: 'João Oliveira', rating: 5, comment: 'Produto de alta qualidade. Meu carro nunca esteve tão limpo.', date: '2024-01-08' }
+  { id: 1, userName: 'Carlos Silva', rating: 5, comment: 'Fixação excelente e projeção na medida certa.', date: '2024-01-15' },
+  { id: 2, userName: 'Maria Santos', rating: 4, comment: 'Chegou rápido e o aroma é sofisticado, gostei muito.', date: '2024-01-10' },
+  { id: 3, userName: 'João Oliveira', rating: 5, comment: 'Fragrância marcante, virou meu perfume assinatura.', date: '2024-01-08' }
 ];
 
 export default function DetalhesProduto() {
@@ -100,6 +100,7 @@ export default function DetalhesProduto() {
   }
 
   const productImages = getProductImages(p);
+  const profile = p.category || 'Assinatura importada';
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '24px', backgroundColor: 'var(--dx-bg)', color: 'var(--dx-text)', minHeight: '100vh' }}>
@@ -158,9 +159,33 @@ export default function DetalhesProduto() {
             <StarRating rating={p.rating || 0} size="large" showNumber />
           </div>
 
-          <p style={{ marginBottom: '24px', color: 'rgba(229,229,229,0.70)' }}>
+          <p style={{ marginBottom: '16px', color: 'rgba(229,229,229,0.70)' }}>
             {p.description}
           </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '12px', marginBottom: '24px' }}>
+            {[
+              { label: 'Família olfativa', value: profile },
+              { label: 'Concentração', value: 'Eau de Parfum' },
+              { label: 'Fixação', value: '8-10 horas' },
+              { label: 'Projeção', value: 'Moderada a intensa' },
+              { label: 'Ocasião', value: 'Noite & eventos' },
+              { label: 'Origem', value: 'Importado' }
+            ].map((item) => (
+              <div
+                key={item.label}
+                style={{
+                  padding: '12px',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  backgroundColor: 'rgba(255,255,255,0.03)'
+                }}
+              >
+                <div style={{ fontSize: '12px', color: 'rgba(229,229,229,0.6)' }}>{item.label}</div>
+                <div style={{ fontSize: '14px', fontWeight: 600 }}>{item.value}</div>
+              </div>
+            ))}
+          </div>
 
           {/* Preço */}
           <div style={{ fontSize: '36px', fontWeight: '700', color: '#FF6B00', marginBottom: '8px' }}>
@@ -227,4 +252,3 @@ export default function DetalhesProduto() {
     </div>
   );
 }
-

@@ -48,6 +48,20 @@ export default function Produtos() {
     return `/product-images/${p.id}.jpg` || `/product-images/${nameFile}` || '/product-images/default.jpg';
   };
 
+  const profileMap: Record<string, string> = {
+    Floral: 'Elegante e delicado',
+    Amadeirado: 'Intenso e sofisticado',
+    Oriental: 'Quente e marcante',
+    Cítrico: 'Refrescante e leve',
+    Gourmand: 'Adocicado e envolvente',
+    Chipre: 'Clássico e elegante'
+  };
+
+  const getProfile = (category?: string) => {
+    if (!category) return 'Assinatura sofisticada';
+    return profileMap[category] || 'Assinatura sofisticada';
+  };
+
   return (
     <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', color: 'var(--dx-text)' }}>
 
@@ -60,7 +74,7 @@ export default function Produtos() {
 
       {!searchTerm && (
         <>
-          <h2 style={{ fontSize: '28px', marginBottom: '24px', color: 'var(--dx-text)' }}>Produtos</h2>
+          <h2 style={{ fontSize: '28px', marginBottom: '24px', color: 'var(--dx-text)' }}>Perfumes Importados</h2>
 
           <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
             <button
@@ -125,25 +139,50 @@ export default function Produtos() {
               e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)';
             }}
           >
-            <img
-              src={getProductImage(p)}
-              onError={(e) => (e.currentTarget.src = '/product-images/default.jpg')}
-              alt={p.name}
-              style={{
-                width: '100%',
-                height: '240px',
-                objectFit: 'cover',
-                borderRadius: '8px',
-                marginBottom: '12px'
-              }}
-            />
+            <div style={{ position: 'relative', marginBottom: '12px' }}>
+              <img
+                src={getProductImage(p)}
+                onError={(e) => (e.currentTarget.src = '/product-images/default.jpg')}
+                alt={p.name}
+                style={{
+                  width: '100%',
+                  height: '240px',
+                  objectFit: 'cover',
+                  borderRadius: '12px',
+                }}
+              />
+              <div
+                style={{
+                  position: 'absolute',
+                  left: 12,
+                  top: 12,
+                  backgroundColor: 'rgba(15,15,15,0.72)',
+                  border: '1px solid rgba(255,255,255,0.16)',
+                  color: 'white',
+                  fontSize: 12,
+                  padding: '4px 10px',
+                  borderRadius: 999
+                }}
+              >
+                {p.category || 'Importado'}
+              </div>
+            </div>
 
-            <div style={{ fontWeight: 600, fontSize: '16px', marginBottom: '8px', color: 'var(--dx-text)' }}>
+            <div style={{ fontWeight: 600, fontSize: '16px', marginBottom: '6px', color: 'var(--dx-text)' }}>
               {p.name}
             </div>
 
-            <div style={{ color: 'rgba(229,229,229,0.70)', fontSize: '14px', marginBottom: '12px' }}>
+            <div style={{ color: 'rgba(229,229,229,0.7)', fontSize: '13px', marginBottom: '8px' }}>
+              {getProfile(p.category)}
+            </div>
+
+            <div style={{ color: 'rgba(229,229,229,0.75)', fontSize: '13px', marginBottom: '12px' }}>
               {p.description}
+            </div>
+
+            <div style={{ display: 'grid', gap: 6, marginBottom: '16px', color: 'rgba(229,229,229,0.7)', fontSize: 12 }}>
+              <div>Concentração: Eau de Parfum</div>
+              <div>Fixação: 8-10h</div>
             </div>
 
             <div style={{ fontSize: '20px', fontWeight: 700, color: '#FF6B00', marginBottom: '16px' }}>
