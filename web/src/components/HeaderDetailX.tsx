@@ -30,8 +30,8 @@ export default function HeaderDetailX({ cartCount = 0, onSearch }: Props) {
         <div>
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
             <div style={{ display: 'flex', alignItems: 'baseline', fontWeight: 800, letterSpacing: 0.4, fontSize: 22 }}>
-              <span style={{ color: '#FFFFFF' }}>Detail</span>
-              <span style={{ color: '#FF6B00', marginLeft: 2 }}>X</span>
+              <span style={{ color: '#FFFFFF' }}>Aroma</span>
+              <span style={{ color: '#FF6B00', marginLeft: 6 }}>Importados</span>
             </div>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export default function HeaderDetailX({ cartCount = 0, onSearch }: Props) {
         <form onSubmit={handleSearchSubmit} style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: '100%', maxWidth: 560, zIndex: 10 }}>
           <input
             type="text"
-            placeholder="Buscar no DetailX..."
+            placeholder="Buscar perfumes importados..."
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
@@ -74,7 +74,7 @@ export default function HeaderDetailX({ cartCount = 0, onSearch }: Props) {
           <form onSubmit={handleSearchSubmit} style={{ position: 'relative', width: '100%', maxWidth: 640 }}>
             <input
               type="text"
-              placeholder="Buscar produtos..."
+              placeholder="Buscar perfumes..."
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value);

@@ -6,10 +6,10 @@ export default function AdminProdutos() {
   const { token } = useAuth() || { token: null };
   const [cats, setCats] = useState<string[]>([]);
   const [list, setList] = useState<Product[]>([]);
-  const [form, setForm] = useState<Product>({ id: '', name: '', description: '', price: 0, rating: 0, stock: 0, supplierId: '', category: '' });
+  const [form, setForm] = useState<Product>({ id: '', name: '', description: '', price: 0, rating: 0, stock: 0, supplierId: '', category: '', photoUrl: '' });
   useEffect(() => { getCategories().then((cs) => setCats(Array.isArray(cs) ? cs : [])); refresh(); }, []);
   const refresh = () => getProducts().then((p) => setList(p));
-  const add = async () => { if (!form.id || !token) return; await adminAddProduct(form, token); setForm({ id: '', name: '', description: '', price: 0, rating: 0, stock: 0, supplierId: '', category: '' }); refresh(); };
+  const add = async () => { if (!form.id || !token) return; await adminAddProduct(form, token); setForm({ id: '', name: '', description: '', price: 0, rating: 0, stock: 0, supplierId: '', category: '', photoUrl: '' }); refresh(); };
   const edit = async (p: Product) => { if (!token) return; await adminUpdateProduct(p.id, p, token); refresh(); };
   const remove = async (id: string) => { if (!token) return; await adminDeleteProduct(id, token); refresh(); };
   const setStock = async (id: string, stock: number) => { await adminUpdateStock(id, stock, token || undefined); refresh(); };
@@ -23,6 +23,7 @@ export default function AdminProdutos() {
           <input placeholder="ID" value={form.id} onChange={e => setForm({ ...form, id: e.target.value })} />
           <input placeholder="Nome" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
           <input placeholder="Descrição" value={form.description} onChange={e => setForm({ ...form, description: e.target.value })} />
+          <input placeholder="URL da Foto" value={form.photoUrl || ''} onChange={e => setForm({ ...form, photoUrl: e.target.value })} />
           <input placeholder="Preço" type="number" value={form.price} onChange={e => setForm({ ...form, price: Number(e.target.value) })} />
           <input placeholder="Avaliação" type="number" value={form.rating} onChange={e => setForm({ ...form, rating: Number(e.target.value) })} />
           <input placeholder="Estoque" type="number" value={form.stock} onChange={e => setForm({ ...form, stock: Number(e.target.value) })} />
@@ -40,10 +41,11 @@ export default function AdminProdutos() {
           {list.map(p => (
             <div key={p.id} style={{ border: '1px solid #eee', borderRadius: 8, padding: 8, marginBottom: 8 }}>
               <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: 8, alignItems: 'center' }}>
-                <img src={p.photoUrl} alt={p.name} style={{ width: 80, height: 80, objectFit: 'cover', borderRadius: 6 }} />
+                <img src={p.photoUrl || '/product-images/default.jpg'} alt={p.name} style={{ width: 80, height: 80, objectFit: 'cover', borderRadius: 6 }} />
                 <div>
                   <input value={p.name} onChange={e => p.name = e.target.value} />
                   <input value={p.description} onChange={e => p.description = e.target.value} />
+                  <input value={p.photoUrl || ''} onChange={e => p.photoUrl = e.target.value} />
                   <div style={{ display: 'flex', gap: 8 }}>
                     <input type="number" value={p.price} onChange={e => p.price = Number(e.target.value)} />
                     <input type="number" value={p.rating} onChange={e => p.rating = Number(e.target.value)} />
